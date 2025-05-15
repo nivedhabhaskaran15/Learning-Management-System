@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Nivedha portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="data:image/png;base64,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">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+    
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Nivedha</h1>
+    </a>
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="data:image/jpeg;base64,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" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Nivedha</h2>
+        <p>I'm <span class="typed" data-typed-items="Designer, FrontEnd Developer, Engineer, Full Stack Developer">Engineering student</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p> I'm a Motivated Computer Science student with strong problem-solving skills and proficiency in Java and
+          C++.
+          Eager to apply my programming skills and learn new technologies in a dynamic software development
+          environment. </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgAsi4AJpnBnlcV26BnNpvrW6FHGtLGX5mCQ&s" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+           
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Thanjavur,Tamilnadu</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Technology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>nivedhabhaskaran1510@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div>End Stats Item -->
+
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div>End Stats Item -->
+
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div>End Stats Item -->
+
+        <!-- </div>
+
+      </div>
+
+    </section>/Stats Section --> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p></p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>React js</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SpringBoot</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>AWS</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+       </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Nivedha Bhaskaran</h4>
+              <p><em> </em></p>
+              <ul>
+                <li>B.Tech IT III year student</li>
+                <li>Thanjavur,Tamilnadu</li>
+                <li>nivedhabhaskaran1510@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology - Information Technology </h4>
+              <h4>Sri Krishna College of Enginnering and Technology,Coimbatore</h4>
+              <h5>2023 - 2027</h5>
+             
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Higher Secondary Education(+2)</h4>
+              <h4>Little rose matric hr.se school,Thanjavur</h4>
+              <h5>2022-2023</h5>
+              
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Edunet Foundation - Microsoft AI Azure Virtual Internship</h4>
+              <h5>2025 - Present</h5>
+              
+            </div><!-- Edn Resume Item -->
+
+           
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"> Programming & Software Development</h4>
+              <p class="description">Development of efficient and optimized C++/Java programs
+
+                implementation of algorithms and data structures and
+                
+                solving complex computational problems</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title">Algorithm Design & Optimization
+              </h4>
+              <p class="description">
+                Designing scheduling algorithms (e.g., SJF, Round Robin)
+
+, optimizing time and space complexity for solutions
+
+, dynamic programming and greedy algorithms
+
+
+              </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"> Academic & Project Assistance</h4>
+              <p class="description">
+                Helping peers with coding assignments and logic building
+
+and contributing to academic projects with clean, well-documented code
+
+and preparing logic and explanations for CS concepts
+              </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title">Problem Solving & Competitive Coding</h4>
+              <p class="description">Solving DSA problems on platforms like LeetCode, GeeksForGeeks</div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title">Other Technical Skills</h4>
+              <p class="description">Building small applications (CLI or GUI-based)
+
+                , Code debugging and performance tuning
+                
+               , Version control (Git), compiling and running code in different environments</div>
+          </div><!-- End Service Item -->
+
+  
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Linkedin</h3>
+                  <p>https://www.linkedin.com/in/nivedha-b-3843382a0</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>nivedhabhaskaran1510@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+ 
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
