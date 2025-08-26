@@ -2,11 +2,11 @@
 
 Welcome to my personal portfolio repository! This project showcases my skills, projects, and experience in software development and design. It's built to serve as a digital resume and an interactive way to explore what I do.
 
-## 🔗 Live Demo
+## Live Demo
 
 https://your-portfolio-link.com
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5 / CSS3
 - JavaScript
@@ -15,7 +15,7 @@ https://your-portfolio-link.com
 - Git & GitHub
 
 
-## ✨ Features
+## Features
 
 - Responsive design
 - Project showcase
@@ -23,7 +23,7 @@ https://your-portfolio-link.com
 - Contact form
 - Smooth scrolling and animations
 
-## 📬 Contact
+## Contact
 
 If you'd like to collaborate or connect:
 
